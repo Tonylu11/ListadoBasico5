@@ -157,12 +157,9 @@ public class SieteYMedia {
 	 * @return devuelve la puntuacion a la que corresponde la figura.
 	 */
 	private static double calcularPuntuacion(int figura) {
-		double puntuacion;
 		if (figura == 8 || figura == 9 || figura == 10)
-			puntuacion = 0.5;
-		else
-			puntuacion = figura;
-		return puntuacion;
+			return 0.5;
+		return figura;
 	}
 
 	/**
